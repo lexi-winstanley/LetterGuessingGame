@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.gameContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.centerContent {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.overGraphic {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.belowContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
+    color: #ffffff;
+}
