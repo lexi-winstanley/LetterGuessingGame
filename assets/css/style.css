@@ -94,6 +94,10 @@ footer p {
     text-align: center;
 }
 
+#listUserGuesses {
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 1280px) {
     .centerContent {
         flex-basis: 40%;
