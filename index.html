@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="pageContent">
-        <h1>The Psychic Game</h1>
+        <h1 class="displayFont">The Psychic Game</h1>
         <div class="gameContainer">
             <div class="centerContent">
-                <img src="assets/image/crystalBall.svg" alt="graphic of crystal ball" />
+                    <img class="graphic" src="assets/image/crystalBall.svg" alt="graphic of crystal ball">
                 <div class="overGraphic">
                     <h2>Press keys to guess what letter I'm thinking of!</h2>
-                    <p>Guesses so far: <span id="listUserGuesses"></span></p>
+                    <p class="extraSpace">Guesses so far: <span id="listUserGuesses"></span></p>
                     <p>Guesses left: <span id="numberGuessesLeft">9</span></p>
                     <div class="belowContent">
                         <p>Wins: <span id="numberWins"></span></p>
@@ -26,6 +26,10 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p>Created by</p>
+        <p>Lexi Winstanley June 2019</p>
+    </footer>
     <script type="text/javascript" src="assets/javascript/game2.js"></script>
 </body>
 </html>

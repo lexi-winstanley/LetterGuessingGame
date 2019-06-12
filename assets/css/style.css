@@ -1,21 +1,46 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Montserrat';
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.displayFont {
+    font-family: 'Righteous';
 }
 
 body {
     font-size: 16px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../image/stripedLens.png");
+    background-repeat: repeat;
+}
+
+.pageContent {
+    flex: 1;
+    padding: 1rem 1.75rem;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+    flex: none;
 }
 
 h2 {
     font-size: 1.25rem;
     padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .gameContainer {
@@ -29,19 +54,73 @@ h2 {
     position: relative;
 }
 
+.graphic {
+    max-width: 100%;
+    height: 100%;
+}
+
 .overGraphic {
     position: absolute;
-    top: 38%;
+    top: 34%;
     width: 100%;
 }
 
 .belowContent {
     display: flex;
     justify-content: center;
-    margin-top: 35%;
+    margin-top: 23%;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 p {
     padding: .25rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+
 }
+
+.extraSpace {
+    margin: 1rem 0 2rem 0;
+}
+
+footer {
+    flex: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .centerContent {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .centerContent {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .centerContent {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .centerContent {
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .centerContent {
+        flex-basis: 100%;
+    }
+}
+
