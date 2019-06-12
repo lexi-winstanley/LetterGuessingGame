@@ -15,8 +15,6 @@ var computerAsciiCode = Math.trunc(Math.random() * 26) + 97;
 //converts ascii code to a string and sets as computerLetter
 computerLetter = String.fromCharCode(computerAsciiCode);
 
-console.log(computerLetter);
-
 function updateDisplay() {
     winsText.textContent = wins;
     lossesText.textContent = losses;
@@ -40,7 +38,6 @@ document.onkeyup = function(event) {
             userGuesses = [];
             computerAsciiCode = Math.trunc(Math.random() * 26) + 97;
             computerLetter = String.fromCharCode(computerAsciiCode);
-            console.log(computerLetter);
         //if userGuess is wrong, add to array and have remaining guesses decrease
         } else if (userGuess !== computerLetter && !userGuesses.includes(userGuess) && userGuesses.length < 8) {
             userGuesses.push(userGuess);
@@ -50,7 +47,6 @@ document.onkeyup = function(event) {
             userGuesses = [];
             computerAsciiCode = Math.trunc(Math.random() * 26) + 97;
             computerLetter = String.fromCharCode(computerAsciiCode);
-            console.log(computerLetter);
         }
         updateDisplay();
     }
